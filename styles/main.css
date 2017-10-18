@@ -1,3 +1,51 @@
+/* ICOMOON */
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?ri4xga");
+  src: url("../fonts/icomoon.eot?ri4xga#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?ri4xga") format("truetype"),
+    url("../fonts/icomoon.woff?ri4xga") format("woff"),
+    url("../fonts/icomoon.svg?ri4xga#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-github:before {
+  content: "\f09b";
+}
+.icon-envelope:before {
+  content: "\f0e0";
+}
+.icon-linkedin:before {
+  content: "\f0e1";
+}
+.icon-stack-overflow:before {
+  content: "\f16c";
+}
+.icon-lastfm:before {
+  content: "\f202";
+}
+
+/* CUSTOM */
 html {
   font: 20px/1.6em "Roboto", sans-serif;
   background-color: #fafafa;
@@ -83,7 +131,6 @@ h1 em {
     0px -1.25px 0px #000;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: FontAwesome;
   font-style: normal;
   font-weight: normal;
 }

@@ -219,7 +219,7 @@
 })(this);
 // ==
 document.documentElement.className = "";
-document.querySelector(".fa-envelope").href = [
+document.querySelector(".icon-envelope").href = [
   "ma",
   "ilto",
   ":",
