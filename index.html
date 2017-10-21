@@ -82,7 +82,42 @@
 
   <span id="cheat">↑ ↑ ↓ ↓ ← → ← → b a</span>
 
-  <script src=scripts/main.js async></script>
+  <script type="text/javascript">
+    (function () {
+      // Remove no-js class
+      document.documentElement.className = "";
+
+      // Add email
+      document.querySelector(".icon-envelope").href = [
+        "ma",
+        "ilto",
+        ":",
+        "%76%69%6E%63%65%6E%74.",
+        "leme",
+        "unier",
+        "+pro@",
+        "%67%6D%61%69%6C.com"
+      ].join("");
+
+      // Konami code easter egg
+      // up up down down right left right left b a
+      let KONAMI_SEQ = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
+      let keyCodeSeq = [];
+      window.addEventListener("keyup", function (e) {
+        keyCodeSeq.push(e.keyCode);
+
+        if (keyCodeSeq.length > KONAMI_SEQ.length) {
+          keyCodeSeq.shift();
+        }
+
+        if (keyCodeSeq.join(" ") === KONAMI_SEQ.join(" ")) {
+          window.location.href =
+            "https://www.youtube.com/embed/NWD7iqtOJSE?autoplay=1";
+        }
+      });
+    })();
+
+  </script>
   <script>
     (function (i, s, o, g, r, a, m) {
       i["GoogleAnalyticsObject"] = r;
@@ -91,7 +126,7 @@
         function () {
           (i[r].q = i[r].q || []).push(arguments);
         }),
-        (i[r].l = 1 * new Date());
+      (i[r].l = 1 * new Date());
       (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
       a.async = 1;
       a.src = g;
